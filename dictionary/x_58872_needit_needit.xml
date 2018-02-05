@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" extends="task" label="Needit" max_length="40" name="x_58872_needit_needit" type="collection">
+        <element label="New Field 1" max_length="40" name="new_field_1" type="integer"/>
+        <element label="New Field 2 " max_length="40" name="new_field_2" type="integer"/>
+        <element label="Requested For" mandatory="true" max_length="32" name="requested_for" reference="sys_user" type="reference"/>
+        <element label="Actual Start of the Ticket" mandatory="true" max_length="40" name="u_glide_date_time_2" type="glide_date_time"/>
+        <element label="When it is due" mandatory="true" max_length="40" name="u_glide_date_time_3" type="glide_date_time"/>
+        <element label="New Integer" max_length="40" name="u_integer_5" type="integer"/>
+        <element label="New Reference" max_length="32" name="u_reference_1" reference="cmdb_ci_appl_dot_net" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="Admin" label="Request Type" mandatory="true" max_length="40" name="u_request_type" type="string">
+            <choice>
+                <element label="Server Team" sequence="0" value="SA"/>
+                <element label="Database Team" sequence="1" value="DBA"/>
+                <element label="Help Desk" sequence="2" value="HD"/>
+                <element label="Admin" sequence="3" value="Admin"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="New String" max_length="40" name="u_string_6" type="string"/>
+    </element>
+</database>
