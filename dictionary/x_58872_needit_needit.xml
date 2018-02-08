@@ -7,6 +7,7 @@
         <element label="Actual Start of the Ticket" mandatory="true" max_length="40" name="u_glide_date_time_2" type="glide_date_time"/>
         <element label="When it is due" mandatory="true" max_length="40" name="u_glide_date_time_3" type="glide_date_time"/>
         <element label="New Integer" max_length="40" name="u_integer_5" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Other" max_length="40" name="u_other" type="string"/>
         <element label="New Reference" max_length="32" name="u_reference_1" reference="cmdb_ci_appl_dot_net" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="3" default="Admin" label="Request Type" mandatory="true" max_length="40" name="u_request_type" type="string">
             <choice>
